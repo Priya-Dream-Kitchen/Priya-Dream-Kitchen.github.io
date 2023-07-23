@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Gotham SSm;
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+    src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Bold_Web.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Gotham SSm;
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+    src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Medium_Web.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Gotham SSm;
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+    src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Book_Web.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Gotham SSm;
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+    src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Light_Web.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Gotham SSm;
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+    src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-XLight_Web.woff2) format("woff2")
+}
