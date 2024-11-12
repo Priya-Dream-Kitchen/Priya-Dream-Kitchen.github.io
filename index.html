@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" light-mode="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priya Dream Kitchen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="This is official website of Priya Dream Kitchen, Weligama. Best place to take Sri Lankan traditional cooking experience.">
+  <meta name="keywords" content="cooking class, srilankan food, sri lankan food, sri lankan traditional food, cooking classes, traditional foods, weligama, cooking class weligama, lessons and workshop, cooking lessons, cooking lessons weligama, weligama cooking">
+
+  <meta property="og:title" content="Priya Dream Kitchen">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="img/logo.png" >
+  <meta name="google-site-verification" content="WNUwN61c9dzsD9ScSWr5mJVYd9pihE3vmqjAdg9HwPc" />
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <img class="navbar-logo" src="img/logo.png">
+      <a class="navbar-brand" href="#">Priya Dream Kitchen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item">
+            <a class="btn btn-outline-light" href="#booking">Book Now</a>
+          </li>
+          <li class="nav-item">
+            <label for="switch" class="switch">
+              <input id="switch" type="checkbox" onclick="toggleTheme()" />
+              <span class="slider"></span>
+              <span class="decoration"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="home" style="background-image: url(img/home.jpg);">
+  <div class="container">
+    <h1><b>Welcome to Priya Dream Kitchen! 🌿✨</b></h1><br/>
+    <p>Discover the heart of traditional cooking! At Priya Dream Kitchen, tourists can immerse themselves in authentic
+      culinary experiences – learn, cook, and savor delicious homemade dishes. 🍲👩‍🍳👨‍🍳 From local spices to
+      traditional techniques, every class is a journey into rich flavors and cultural stories. Join us and make
+      memories one bite at a time! 🌏❤️🍽️</p>
+
+  </div>
+</section>
+
+<section id="services" class="services" style="background-image: url(img/service.jpg);">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card equal-height">
+          <h3>Hands-On Cooking Lessons 🍳</h3>
+          <p>Jump into our cooking class and create delicious dishes with guidance from our expert chefs. You’ll learn essential techniques, work with fresh ingredients, and have a blast making meals from scratch. Perfect for beginners and food enthusiasts alike in our lively, interactive kitchen!</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card equal-height">
+          <h3>Chef-Led Culinary Demonstrations 🧑‍🍳</h3>
+          <p>Watch our talented chefs in action as they demonstrate recipes and share tips and tricks. From knife skills to flavor-building secrets, our chefs guide you step-by-step, so you’ll leave inspired and ready to cook with confidence at home.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card equal-height">
+          <h3>Eat What You Make (and More!) 🍽️</h3>
+          <p>Enjoy the fruits of your labor! After cooking, sit down to taste and savor your creations. You’ll also try dishes prepared by our chefs, creating a memorable culinary experience where you get to relax, eat, and celebrate your hard work in the kitchen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="gallery" class="gallery">
+  <div class="container">
+    <h2>Our Gallery</h2>
+    <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <img src="img/img1.jpg" alt="Delicious Dish" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+              <img src="img/img2.jpg" alt="Kitchen Setup" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+              <img src="img/img3.jpg" alt="Cooking in Action" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <img src="img/img4.jpg" alt="Another Dish" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+              <img src="img/imgmain.jpg" alt="Main Dish" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+              <img src="img/img5.jpg" alt="Delicious Dish" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section id="booking" class="booking">
+  <div class="container">
+    <h2>Book Your Experience</h2>
+    <form id="bookingForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone:</label>
+        <input type="tel" id="phone" name="phone" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="date" class="form-label">Date:</label>
+        <input type="date" id="date" name="date" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="time" class="form-label">Time Slot:</label>
+        <select id="time" name="time" class="form-select" required>
+          <option value="">Select a time slot</option>
+          <option value="8-10">8.00 AM - 10.00 AM</option>
+          <option value="10-12">10:00 AM - 12:00 PM</option>
+          <option value="12-2">12:00 PM - 2:00 PM</option>
+          <option value="2-4">2:00 PM - 4:00 PM</option>
+          <option value="4-6">4:00 PM - 6:00 PM</option>
+          <option value="6-8">6:00 PM - 8:00 PM</option>
+          <option value="8-10">8:00 PM - 10:00 PM</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="guests" class="form-label">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" class="form-control" min="1" max="6" required>
+      </div>
+      <div class="mb-3">
+        <ul>
+          <li style="text-align: left;"><i>15$ for 1 person</i></li>
+        </ul>
+      </div>
+      <button type="submit" class="btn btn-primary">Book Now</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">Copyright &copy; 2024. All rights Reserved Priya Dream Kitchen</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>
