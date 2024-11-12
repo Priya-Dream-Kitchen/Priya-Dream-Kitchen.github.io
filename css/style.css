@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: #000000;
+  color: #ddd;
+}
+
+body.light-theme {
+  background-color: #efefef;
+  color: #000000;
+}
+
+.header, .service, .gallery {
+  background-color: #000000;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+body.dark-theme .header,
+body.dark-theme .service,
+body.dark-theme .gallery,
+body.dark-theme .booking,
+body.dark-theme .footer  {
+  background-color: #000000;
+  color: #ddd;
+}
+
+body.light-theme .header,
+body.light-theme .service,
+body.light-theme .gallery {
+  background-color: #efefef;
+  color: #000000;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+body.dark-theme .theme-toggle {
+  background-color: #fff;
+  color: #000000;
+}
+
+body.light-theme .theme-toggle {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.header .navbar {
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: 10px;
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+}
+
+body.light-theme .header .navbar {
+  background-color: rgba(136, 134, 134, 0.8);
+}
+
+.header .navbar-logo {
+  width: 75px;
+  height: 75px;
+}
+
+.header .navbar-brand {
+  font-size: 1.8em;
+  color: #ffb400; 
+  font-weight: bold;
+}
+
+.header .navbar-nav .nav-link {
+  color: #e0e0e0;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+body.light-theme .header .navbar-nav .nav-link {
+  color: #000000;
+}
+
+.header .navbar-nav .nav-link:hover {
+  color: #ffb400; 
+}
+
+.header .btn-outline-light {
+  color: #e0e0e0;
+  border-color: #e0e0e0;
+}
+
+body.light-theme .header .btn-outline-light {
+  color: #000000;
+  border-color: #000000;
+}
+
+.header .btn-outline-light:hover {
+  color: #ffb400;
+  border-color: #ffb400;
+}
+
+section {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.home, .services, .gallery, .contact, .booking {
+  background-color: rgba(30, 30, 30, 0.9); /* Dark background for sections */
+  margin-bottom: 1em;
+  border-radius: 8px;
+  padding: 2em;
+}
+
+#home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+#home .container {
+  position: relative;
+  z-index: 2;
+}
+
+#services{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
+body.light-theme .home{
+  color: white;
+}
+
+body.dark-theme .home{
+  color: white;
+}
+
+body.light-theme .home,
+body.light-theme .services,
+body.light-theme .gallery,
+body.light-theme .contact,
+body.light-theme .booking {
+  background-color: #efefef; 
+}
+
+
+.card.equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card h3 {
+  margin-top: 20px; 
+}
+
+.card-body {
+  flex-grow: 1;  
+}
+
+.services {
+  padding: 50px 0;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em; 
+}
+
+
+.card {
+  background-color: #2c2c2c; 
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1.5em;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+body.light-theme .card {
+  background-color: #efefef;
+  color: #000000;
+  border: 1px solid #ddd;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.btn-primary {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #ff4d4d;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  background-color: #1e1e1e;
+  padding: 1.5em;
+  border-radius: 8px;
+}
+
+body.light-theme form {
+  background-color: #949292;
+  color: #000000;
+}
+
+.form-label {
+  color: #e0e0e0;
+}
+
+body.light-theme .form-label {
+  color: #000000;
+}
+
+.form-control, .form-select, textarea {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+body.light-theme .form-control,
+body.light-theme .form-select,
+body.light-theme textarea {
+  background-color: #efefef;
+  color: #000000;
+  border: 1px solid #ddd;
+}
+
+.form-control::placeholder, .form-select::placeholder, textarea::placeholder {
+  color: #999;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  --background: #20262c;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #ececd9, -4px 1px 4px 0px #dadada;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+.decoration {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  right: 20%;
+  top: 15%;
+  background: #e5f041e6;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s;
+  box-shadow: -7px 10px 0 #e5f041e6, 8px 15px 0 #e5f041e6, -17px 1px 0 #e5f041e6,
+  -20px 10px 0 #e5f041e6, -7px 23px 0 #e5f041e6, -15px 25px 0 #e5f041e6;
+}
+
+input:checked ~ .decoration {
+  transform: translateX(-20px);
+  width: 10px;
+  height: 10px;
+  background: white;
+  box-shadow: -12px 0 0 white, -6px 0 0 1.6px white, 5px 15px 0 1px white,
+  1px 17px 0 white, 10px 17px 0 white;
+}
+
+input:checked + .slider {
+  background-color: #5494de;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #efdf2b, 0 0 10px 0px #efdf2b;
+}
+
+body.light-theme .footer {
+  background-color: #efefef;
+  color: #000000;
+}
+
+.footer {
+  position: fixed;
+  font-size: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 1px 0;
+}
