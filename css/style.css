@@ -360,6 +360,25 @@ body.light-theme textarea {
   -20px 10px 0 #e5f041e6, -7px 23px 0 #e5f041e6, -15px 25px 0 #e5f041e6;
 }
 
+.reviews {
+  padding: 2em 0;
+  text-align: center;
+  background-color: rgba(30, 30, 30, 0.9);
+  margin-bottom: 1em;
+  border-radius: 8px;
+  padding: 2em;
+}
+
+body.dark-theme .reviews {
+  background-color: #000000;
+  color: #ddd;
+}
+
+body.light-theme .reviews {
+  background-color: #efefef;
+  color: #000000;
+}
+
 input:checked ~ .decoration {
   transform: translateX(-20px);
   width: 10px;
