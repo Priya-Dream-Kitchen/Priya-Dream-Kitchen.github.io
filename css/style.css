@@ -112,14 +112,12 @@ body.light-theme .header .navbar-nav .nav-link {
 }
 
 .header .btn-outline-light {
-  background-color: #ff6b6b;
   color: #e0e0e0;
   border-color: #e0e0e0;
 }
 
 body.light-theme .header .btn-outline-light {
-  background-color: #ff6b6b;
-  color: #e0e0e0;
+  color: #000000;
   border-color: #000000;
 }
 
