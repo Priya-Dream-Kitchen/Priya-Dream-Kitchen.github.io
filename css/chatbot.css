@@ -52,6 +52,7 @@
   align-items: center;
 }
 .chat-header h3 {
+  align-items: center;
   margin: 0;
   font-size: 16px;
 }
@@ -95,6 +96,8 @@
   border-radius: 12px;
   max-width: 80%;
   word-wrap: break-word;
+  font-weight: bold;
+  color: black;
 }
 .user-message {
   background: #f1f1f1;
