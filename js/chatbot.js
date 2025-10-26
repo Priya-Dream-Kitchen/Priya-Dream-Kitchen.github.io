@@ -52,6 +52,8 @@ function getBotReply(input) {
     return "📞 You can contact us at +94 74 241 7308 or message us on Whatsapp!";
   } else if (input.includes("thank")) {
     return "😊 You're most welcome!";
+  } else if (input.includes("hi")) {
+    return "👋 Hi, How can I help you today?";
   } else {
     return "🤔 Sorry, I’m not sure about that. Try asking about 'menu', 'location', or 'hours'.";
   }
