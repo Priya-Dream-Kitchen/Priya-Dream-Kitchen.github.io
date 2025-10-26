@@ -54,7 +54,8 @@ function getBotReply(input) {
     return "😊 You're most welcome!";
   } else if (input.includes("hi")) {
     return "👋 Hi, How can I help you today?";
-  } else {
+  } else if (input.includes("Whatsapp")) {
+      return "📞 wa.me/+94742417308";
+  }else {
     return "🤔 Sorry, I’m not sure about that. Try asking about 'menu', 'location', or 'hours'.";
-  }
-}
+}}
