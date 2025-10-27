@@ -16,6 +16,10 @@
   <link rel="icon" href="img/logo.png" >
   <meta name="google-site-verification" content="WNUwN61c9dzsD9ScSWr5mJVYd9pihE3vmqjAdg9HwPc" />
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 
@@ -23,9 +27,20 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <style>
+
     html {
       scroll-behavior: smooth;
     }
+
+    /*Google Fonts*/
+    .kitchen-font { 
+      font-family: "Berkshire Swash", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 5rem;
+      color: #ffb400
+    }
+
   </style>
 </head>
 
@@ -47,7 +62,7 @@
 <header class="header">
   <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark glass-box">
 
       <img class="navbar-logo" src="img/logo.png" alt="Priya Dream Kitchen logo" onclick="window.location.reload()">
       <a class="navbar-brand" href="#" onclick="window.location.reload()">Priya Dream Kitchen</a>
@@ -79,21 +94,31 @@
 </header>
 
 <section id="home" class="home" style="background-image: url(img/home.jpg);">
-  <div class="container">
+  <!-- <div class="container">
     <h1><b>Welcome to Priya Dream Kitchen! 🌿✨</b></h1><br/>
     <p>Discover the heart of traditional cooking! At Priya Dream Kitchen, tourists can immerse themselves in authentic
       culinary experiences – learn, cook, and savor delicious homemade dishes. 🍲👩‍🍳👨‍🍳 From local spices to
       traditional techniques, every class is a journey into rich flavors and cultural stories. Join us and make
       memories one bite at a time! 🌏❤️🍽️</p>
+  </div> -->
 
+  <div class="container">
+    <div class="hero-glass">
+      <h1 class="hero-title">Priya Dream <span class="kitchen-font">Kitchen!</span> </h1> <br><br>
+      <p class="hero-lead">Discover the soul of traditional cooking at Priya Dream Kitchen! 🌿
+      Cook, taste, and enjoy authentic homemade dishes while exploring rich flavors, spices, and cultural stories. 🍲✨
+      Join us every meal is a memory! ❤️</p>
+    </div>
   </div>
+
 </section>
 
-<section id="services" class="services" style="background-image: url(img/service.jpg);">
+<!-- <section id="services" class="services" style="background-image: url(img/service.jpg);">
   <div class="container">
-    <h2>Our Services</h2>
-    <div class="row">
-      <div class="col-md-4">
+   <h2>Our Services</h2>
+    <div class="row ">
+
+      <div class="col-md-4 hero-glass">
         <div class="card equal-height">
           <h3>Hands-On Cooking Lessons 🍳</h3>
           <p>Jump into our cooking class and create delicious dishes with guidance from our expert chefs. You’ll learn essential techniques, work with fresh ingredients, and have a blast making meals from scratch. Perfect for beginners and food enthusiasts alike in our lively, interactive kitchen!</p>
@@ -113,7 +138,38 @@
       </div>
     </div>
   </div>
+</section> -->
+
+<section id="services" class="services" style="background-image: url(img/service.jpg);">
+  <div class="container">
+   <h2>Our Services</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card glass-box equal-height">
+          <h3>Hands-On Cooking Lessons 🍳</h3>
+          <p>Jump into our cooking class and create delicious dishes with guidance from our expert chefs. You’ll learn essential techniques, work with fresh ingredients, and have a blast making meals from scratch. Perfect for beginners and food enthusiasts alike in our lively, interactive kitchen!</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card glass-box equal-height">
+          <h3>Chef-Led Culinary Demonstrations 🧑‍🍳</h3>
+          <p>Watch our talented chefs in action as they demonstrate recipes and share tips and tricks. From knife skills to flavor-building secrets, our chefs guide you step-by-step, so you’ll leave inspired and ready to cook with confidence at home.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card glass-box equal-height">
+          <h3>Eat What You Make (and More!) 🍽️</h3>
+          <p>Enjoy the fruits of your labor! After cooking, sit down to taste and savor your creations. You’ll also try dishes prepared by our chefs, creating a memorable culinary experience where you get to relax, eat, and celebrate your hard work in the kitchen.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
+// ...existing code...
 
 
 <section id="gallery" class="gallery">
