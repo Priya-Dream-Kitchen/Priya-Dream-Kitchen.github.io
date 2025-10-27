@@ -19,6 +19,9 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 
+   <!-- Lottie Player (for preloader) -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
   <style>
     html {
       scroll-behavior: smooth;
@@ -28,15 +31,31 @@
 
 <body>
 
+ <!-- Preloader -->
+  <div id="preloader" aria-label="Loading" role="status">
+    <lottie-player
+      src="https://lottie.host/c8d3f3c3-747a-49bf-9b70-4089084fd06d/sj2ItUU9Oo.json"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px;"
+      loop
+      autoplay
+    ></lottie-player>
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
 <header class="header">
   <div class="container">
+
     <nav class="navbar navbar-expand-lg navbar-dark">
+      
       <img class="navbar-logo" src="img/logo.png">
       <a class="navbar-brand" href="#">Priya Dream Kitchen</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
@@ -291,6 +310,37 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="js/app.js"></script>
+
+<!-- Hide preloader when page fully loads -->
+<script>
+  (function () {
+    const preloader = document.getElementById('preloader');
+    if (!preloader) return;
+
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      preloader.classList.add('preloader-hide');
+      document.body.classList.remove('loading');
+
+      // Remove after transition ends (with fallback)
+      const remove = () => preloader.remove();
+      preloader.addEventListener('transitionend', remove, { once: true });
+      setTimeout(remove, 2000);
+    };
+
+    const minTime = new Promise(r => setTimeout(r, 600));
+    const fontsReady = ('fonts' in document) ? document.fonts.ready : Promise.resolve();
+
+    window.addEventListener('load', () => {
+      Promise.all([minTime, fontsReady]).then(finish);
+    });
+
+     // Safety timeout in case some asset blocks 'load'
+    setTimeout(finish, 4000);
+  })();
+</script>
 
 
 </body>
