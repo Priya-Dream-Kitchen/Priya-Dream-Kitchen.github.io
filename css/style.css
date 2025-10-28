@@ -97,6 +97,8 @@ body.light-theme .header .navbar {
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px) saturate(120%);
   -webkit-backdrop-filter: blur(12px) saturate(120%);
+  position: relative;        
+  overflow: hidden;          
 }
 
 .header .navbar-logo {
@@ -172,6 +174,59 @@ body.light-theme .services .card.glass-box {
 /* Optional: accent heading color */
 .services .card.glass-box h3 {
   color: #ffb400;
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+
+.services .card.glass-box p {
+  font-size: 1.4em;
+}
+
+/* Shine sweep overlay */
+.glass-box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.18) 45%,
+    rgba(255,255,255,.55) 50%,
+    rgba(255,255,255,.18) 55%,
+    rgba(255,255,255,0) 100%
+  );
+  opacity: 0;
+  pointer-events: none;
+}
+
+.glass-box:hover {
+  box-shadow: 0 15px 40px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.2);
+  border-color: rgba(255,255,255,.4);
+}
+
+.glass-box:hover::after {
+  opacity: 1;
+  animation: glass-shine 900ms ease;
+}
+
+@keyframes glass-shine {
+  from { left: -75%; }
+  to   { left: 130%; }
+}
+
+/* Service card hover (fix selector spacing) */
+.services .card.glass-box:hover {
+  transform: translateY(-2px);
+  transition: transform .25s ease;
+}
+
+.services h2 {
+  font-weight: 900;
+  font-size: 10px;
+  margin-bottom: 1em;
 }
 
 .header .navbar-brand {
