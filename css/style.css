@@ -89,6 +89,7 @@ body.light-theme .header .navbar {
 .header .navbar-logo {
   width: 75px;
   height: 75px;
+  cursor: ponter;
 }
 
 .header .navbar-brand {
