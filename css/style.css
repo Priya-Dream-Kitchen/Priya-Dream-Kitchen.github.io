@@ -89,8 +89,7 @@ body.light-theme .header .navbar {
 
 .glass-box {
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.08);
-  background-image: linear-gradient(180deg, rgba(255,255,255,0.16), rgba(255,255,255,0.06));
+  background: rgba(255, 255, 255, 0.08) linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06));
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.35),
@@ -105,7 +104,7 @@ body.light-theme .header .navbar {
   font-weight: bolder;
   width: 75px;
   height: 75px;
-  cursor: ponter;
+  cursor: pointer;
 }
 
 
@@ -115,8 +114,7 @@ body.light-theme .header .navbar {
   margin: 2rem auto;
   padding: clamp(1rem, 2.5vw, 2rem);
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.08);            
-  background-image: linear-gradient(180deg, rgba(255,255,255,0.16), rgba(255,255,255,0.06));
+  background: rgba(255, 255, 255, 0.08) linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06));
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.35),
@@ -147,26 +145,24 @@ body.light-theme .header .navbar {
 }
 
 body.light-theme #home .hero-glass {
-  background: rgba(0, 0, 0, 0.15);
-  background-image: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.08));
+  background: rgba(0, 0, 0, 0.15) linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.08));
   border-color: rgba(255,255,255,0.3);
 }
 
-/* Service cards as individual glass boxes */
+/* Service cards in glass boxes */
 .services .card.glass-box {
-  background: rgba(255, 255, 255, 0.08);
-  background-image: linear-gradient(180deg, rgba(255,255,255,0.16), rgba(255,255,255,0.06));
+  background: rgba(255, 255, 255, 0.08) linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06));
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 10px 30px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.15);
   color: #fff;
   backdrop-filter: blur(12px) saturate(120%);
   -webkit-backdrop-filter: blur(12px) saturate(120%);
+  border-radius: 18px;
 }
 
 /* Override default card dark fill in light theme while keeping glass look */
 body.light-theme .services .card.glass-box {
-  background: rgba(0, 0, 0, 0.15);
-  background-image: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.08));
+  background: rgba(0, 0, 0, 0.15) linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.08));
   border-color: rgba(255,255,255,0.3);
   color: #000;
 }
@@ -385,7 +381,7 @@ form {
   margin: auto;
   background-color: #1e1e1e;
   padding: 1.5em;
-  border-radius: 8px;
+  border-radius: 18px;
 }
 
 body.light-theme form {
@@ -504,7 +500,6 @@ body.light-theme textarea {
   background-color: rgba(30, 30, 30, 0.9);
   margin-bottom: 1em;
   border-radius: 8px;
-  padding: 2em;
 }
 
 body.dark-theme .reviews {
